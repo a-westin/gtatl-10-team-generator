@@ -24,6 +24,76 @@ const employeeType = [
   },
 ];
 
+// Employee question arrays
+const internArray = [
+  {
+    type: "input",
+    message: "Employee name?",
+    name: "name",
+  },
+  {
+    type: "input",
+    message: "Employee ID?",
+    name: "ID",
+  },
+  {
+    type: "input",
+    message: "Employee email address?",
+    name: "email",
+  },
+  {
+    type: "input",
+    message: "Name of employee's school?",
+    name: "school",
+  },
+];
+
+const engineerArray = [
+  {
+    type: "input",
+    message: "Employee name?",
+    name: "name",
+  },
+  {
+    type: "input",
+    message: "Employee ID?",
+    name: "ID",
+  },
+  {
+    type: "input",
+    message: "Employee email address?",
+    name: "email",
+  },
+  {
+    type: "input",
+    message: "Employee GitHub username?",
+    name: "github",
+  },
+];
+
+const mgrArray = [
+  {
+    type: "input",
+    message: "Employee name?",
+    name: "name",
+  },
+  {
+    type: "input",
+    message: "Employee ID?",
+    name: "ID",
+  },
+  {
+    type: "input",
+    message: "Employee email address?",
+    name: "email",
+  },
+  {
+    type: "input",
+    message: "Employee office number?",
+    name: "officeNum",
+  },
+];
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
