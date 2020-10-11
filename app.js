@@ -16,11 +16,12 @@ const render = require("./lib/htmlRenderer");
 const { type } = require("os");
 
 // Selecting what type of employee to add
-const employeeType = [
+const employeeTypeArray = [
   {
     type: "list",
-    message: "Please select an employee to add to the team.",
+    message: "Please select a type of employee to add to the team.",
     choices: ["Intern", "Engineer", "Manager", "None"],
+    name: "empType",
   },
 ];
 
@@ -93,6 +94,31 @@ const mgrArray = [
     name: "officeNum",
   },
 ];
+
+function generate() {
+  inquirer;
+  employeeType();
+}
+
+function employeeType() {
+  inquirer
+    .prompt(employeeTypeArray)
+    .then((answer) => {
+      if (answer.empType === "Intern") {
+        internArray();
+      } else if (answer.empType === "Engineer") {
+        engineerArray();
+      } else if (answer.empType === "Manager") {
+        mgrArray();
+      } else {
+        fs.writeFile(outputPath, render(employees), (err) => {
+          if (err) throw err;
+          console.log("File written!");
+        });
+      }
+    })
+    .catch((err) => console.log(err));
+}
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
