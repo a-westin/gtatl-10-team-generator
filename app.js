@@ -13,6 +13,16 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
+const { type } = require("os");
+
+// Selecting what type of employee to add
+const employeeType = [
+  {
+    type: "list",
+    message: "Please select an employee to add to the team.",
+    choices: ["Intern", "Engineer", "Manager", "None"],
+  },
+];
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
