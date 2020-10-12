@@ -7,6 +7,7 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 const employees = [];
+const { prompt } = require("inquirer");
 
 // Output
 const OUTPUT_DIR = path.resolve(__dirname, "output");
@@ -105,11 +106,11 @@ function employeeType() {
     .prompt(employeeTypeArray)
     .then((answer) => {
       if (answer.empType === "Intern") {
-        internArray();
+        internQues();
       } else if (answer.empType === "Engineer") {
-        engineerArray();
+        engineerQues();
       } else if (answer.empType === "Manager") {
-        mgrArray();
+        managerQues();
       } else {
         fs.writeFile(outputPath, render(employees), (err) => {
           if (err) throw err;
@@ -168,6 +169,10 @@ function managerQues() {
     })
     .catch((err) => console.log(err));
 }
+
+console.log("Please enter new employee information.");
+
+generate();
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
