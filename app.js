@@ -120,6 +120,19 @@ function employeeType() {
     .catch((err) => console.log(err));
 }
 
+// If intern . . .
+function internQues() {
+  inquirer
+    .prompt(internArray)
+    .then((response) => {
+      employees.push(
+        new Intern(response.name, response.ID, response.email, response.school)
+      );
+      generate();
+    })
+    .catch((err) => console.log(err));
+}
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
