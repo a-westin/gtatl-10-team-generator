@@ -133,6 +133,20 @@ function internQues() {
     .catch((err) => console.log(err));
 }
 
+// If engineer . . .
+function engineerQues() {
+    .prompt(engineerArray)
+    .then((response) => {
+        employees.push(
+            new Engineer(response.name, response.ID, response.email, response.github)
+        );
+        generate();
+    })
+    .catch((err) => console.log(err));
+}
+
+// If manager . . .
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
