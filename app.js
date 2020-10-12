@@ -135,17 +135,39 @@ function internQues() {
 
 // If engineer . . .
 function engineerQues() {
+  inquirer
     .prompt(engineerArray)
     .then((response) => {
-        employees.push(
-            new Engineer(response.name, response.ID, response.email, response.github)
-        );
-        generate();
+      employees.push(
+        new Engineer(
+          response.name,
+          response.ID,
+          response.email,
+          response.github
+        )
+      );
+      generate();
     })
     .catch((err) => console.log(err));
 }
 
 // If manager . . .
+function managerQues() {
+  inquirer
+    .prompt(mgrArray)
+    .then((response) => {
+      employees.push(
+        new Manager(
+          response.name,
+          response.ID,
+          response.email,
+          response.officeNum
+        )
+      );
+      generate();
+    })
+    .catch((err) => console.log(err));
+}
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
