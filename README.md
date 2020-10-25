@@ -2,9 +2,9 @@
 
   ## Description  
 
-  This project showcases a CLI that generates a simple team directory based on user input and dynamically creates an html file to display the team information. View the Screencastify walkthrough video [here.](https://drive.google.com/file/d/1JYJbzurSLy42A82Q3bs_kZFhQKv0cPZq/view)
+  This project showcases a node.js CLI that generates a simple team directory based on user input and dynamically creates an html file to display the team information. View the Screencastify walkthrough video [here.](https://drive.google.com/file/d/1T8z5cVXiIUbpjmiu8DEtXbxMPhWDiPxI/view?usp=sharing)
   
-  ![Screen Shot 2020-10-06 at 1 12 29 AM](https://user-images.githubusercontent.com/69770137/95161700-da4b5100-0771-11eb-9225-45004b62f88d.png)
+![Screen Shot 2020-10-25 at 5 09 55 PM](https://user-images.githubusercontent.com/69770137/97119231-440da980-16e5-11eb-81dd-41f938f772b6.png)
 
   ******
 
@@ -17,6 +17,7 @@
   ******
 
   ## Installation
+  
   Clone the repository to your local machine and run 'npm install' to add the necessary modules.  
 
   ******
@@ -28,15 +29,13 @@
   
   I had some challenges when it came to testing the application and was not able to get all of the tests to pass successfully. Hopefully, further troubleshooting will allow me to debug the app in the future. 
   
-  ![Screen Shot 2020-10-06 at 1 11 37 AM](https://user-images.githubusercontent.com/69770137/95161536-690b9e00-0771-11eb-9e1f-7188d5946de8.png)
 
   ******
 
   ### Credits
-  For the project badges, I referenced [this](https://github.com/Naereen/badges) repository as well as [this](https://forthebadge.com/) website. 
   
-  I found the various open source licenses and their corresponding badges [here.](https://choosealicense.com/)  
-
+  Although it wasn't quite the same as the application I was required to build, I still found [this](https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs) tutorial helpful when it came to explaining how to build a node.js CLI. 
+  
   ******
 
   #### License
